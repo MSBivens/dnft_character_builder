@@ -62,11 +62,12 @@ Here are some of the basic components for the project
 ## Expansions
 This section lists out the ideas for additional features. This is ONLY for if we have enough time, and all of these are up for debate. Anything we want but don't have time for can be added to the roadmap and implemented after the hackathon by us or others.
 - Advanced user settings (TBD what these could be) e.g. light/dark mode
-- Additional traits to customize character
+- Additional traits to customize character (e.g. frames?)
 - Additional options for already implemented traits
 - Special Items: these would be items not available by default
     - This is in consideration because it would replicate how earned items are unlocked for use by a character in a game
     - These would be their own NFTs that if a wallet has access to, can be applied to a character
+    - If implemented, would need to create one for us (maybe special item only enough minted for each of us, like a founding team item or even a contributor item?)
 - Special Item Inventory (reliant on previous expansion)
     - Inventory displaying the special items you have and who each one is attached to
 - Statistics Page; a page where it shows the rarest characters, and rarest pieces by category
