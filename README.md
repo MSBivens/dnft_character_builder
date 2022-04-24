@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MSBivens/dnft_character_builder">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/placeholder.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">dNFT Character Builder</h3>
