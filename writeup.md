@@ -1,6 +1,6 @@
 This write up serves to provide additional direction and clarity during the initial development process. 
 
-Here is the link to the wireframe: https://miro.com/app/board/uXjVO64iY1k=/?share_link_id=495672257442 
+Here is the link to the wireframe (draft!): https://miro.com/app/board/uXjVO64iY1k=/?share_link_id=495672257442 
 
 ## Informal Description
 The dNFT Character Generator allows users to freely mint a base dNFT character (via Polygon). They can customize and edit their character with the available options. Using Chainlink's VRF, users can randomize thier character's traits.
@@ -18,14 +18,18 @@ This project can be forked by any dev looking to implement the system in their o
 - Read the about
     - Basic information about the project and us as the devs
 
+NOTE: Filecoin can store everything for us including the website.
+
 ## Chainlink Integration
 - VRF https://chain.link/chainlink-vrf 
     Using this, characters can randomize character options
 
 
 ## Helpful Links 
+Chainlink Spring Hackathon page https://chain.link/hackathon
 What Is a Dynamic NFT? https://blog.chain.link/what-is-a-dynamic-nft/ 
 How to Build Dynamic NFTs on Polygon https://blog.chain.link/how-to-build-dynamic-nfts-on-polygon/ 
+Team Collaboration With GitHub https://code.tutsplus.com/articles/team-collaboration-with-github--net-29876 
 
 ## Basic Components
 Here are some of the basic components for the project
