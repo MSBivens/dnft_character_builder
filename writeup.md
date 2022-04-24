@@ -27,9 +27,11 @@ NOTE: Filecoin can store everything for us including the website.
 
 ## Helpful Links 
 Chainlink Spring Hackathon page https://chain.link/hackathon
+Chainlink Spring hackathon devpost https://chainlinkspring2022.devpost.com/ 
 What Is a Dynamic NFT? https://blog.chain.link/what-is-a-dynamic-nft/ 
 How to Build Dynamic NFTs on Polygon https://blog.chain.link/how-to-build-dynamic-nfts-on-polygon/ 
 Team Collaboration With GitHub https://code.tutsplus.com/articles/team-collaboration-with-github--net-29876 
+Difference b/t UI & UX 
 
 ## Basic Components
 Here are some of the basic components for the project
@@ -40,9 +42,24 @@ Here are some of the basic components for the project
     - Mint basic dNFT
     - Update dNFT (this changes the traits and appearance)
 
+## Roles
+| Role | Person | Description |
+| --- | --- | --- |
+| Front End Basics | TBD | Create a clickable MVP front-end |
+| User Interface | TBD | Advanced front-end work |
+| User Experience | TBD | Drives overall experience of the dApp |
+| Scanning Wallet | TBD | Scan wallet to find and pull dNFT information |
+| Wallet Access | TBD | Account access to website |
+| Minting & Updating dNFT | TBD | Smart contract for minting & updating dNFT |
+| Deployer | TBD | Manages deploying dApp to Filecoin or IPFS |
+| Trait Builder | TBD | Creates the customization options |
+| Copywriting | TBD | Create the copy |
+| Repo Manager | Mike | Manage push/pull requests |
+| X | TBD | X |
 
 ## Expansions
 This section lists out the ideas for additional features. This is ONLY for if we have enough time, and all of these are up for debate. Anything we want but don't have time for can be added to the roadmap and implemented after the hackathon by us or others.
+- Advanced user settings (TBD what these could be) e.g. light/dark mode
 - Additional traits to customize character
 - Additional options for already implemented traits
 - Special Items: these would be items not available by default
