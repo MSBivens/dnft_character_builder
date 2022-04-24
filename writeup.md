@@ -59,6 +59,11 @@ Here are some of the basic components for the project
 | Repo Manager | Mike | Manage push/pull requests |
 <!-- | X | TBD | X | -->
 
+## Guidelines for development
+Commit to master often, e.g. after writing a working method, fixing typos, fixing indentation
+Commit to a branch (you'll have to make one) if what you're committing would break the build or isn't done yet
+Comment what each function/method does, where new sections begin (navigation/container/footer)
+
 ## Expansions
 This section lists out the ideas for additional features. This is ONLY for if we have enough time, and all of these are up for debate. Anything we want but don't have time for can be added to the roadmap and implemented after the hackathon by us or others.
 - Advanced user settings (TBD what these could be) e.g. light/dark mode
