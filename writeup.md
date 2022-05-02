@@ -64,7 +64,7 @@ Commit to master often, e.g. after writing a working method, fixing typos, fixin
 Commit to a branch (you'll have to make one) if what you're committing would break the build or isn't done yet
 Comment what each function/method does, where new sections begin (navigation/container/footer)
 
-## Expansions
+## Product Backlog
 This section lists out the ideas for additional features. This is ONLY for if we have enough time, and all of these are up for debate. Anything we want but don't have time for can be added to the roadmap and implemented after the hackathon by us or others.
 - Advanced user settings (TBD what these could be) e.g. light/dark mode
 - Additional traits to customize character (e.g. frames?)
@@ -73,7 +73,7 @@ This section lists out the ideas for additional features. This is ONLY for if we
     - This is in consideration because it would replicate how earned items are unlocked for use by a character in a game
     - These would be their own NFTs that if a wallet has access to, can be applied to a character
     - If implemented, would need to create one for us (maybe special item only enough minted for each of us, like a founding team item or even a contributor item?)
-- Special Item Inventory (reliant on previous expansion)
+- Special Item Inventory (reliant on previous backlog item)
     - Inventory displaying the special items you have and who each one is attached to
 - Statistics Page; a page where it shows the rarest characters, and rarest pieces by category
     - These examples focus on a single character and not a page showing rarest pieces but they help to get an idea
