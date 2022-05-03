@@ -47,8 +47,8 @@ Here are some of the basic components for the project
 ## Roles
 | Role | Person | Description |
 | --- | --- | --- |
-| Front End Basics | TBD | Create a clickable MVP front-end |
-| User Interface | TBD | Advanced front-end work |
+| Front End Basics | Jared | Create a clickable MVP front-end |
+| User Interface | Jared | Advanced front-end work |
 | User Experience | TBD | Drives overall experience of the dApp |
 | Scanning Wallet | TBD | Scan wallet to find and pull dNFT information |
 | Wallet Access | TBD | Account access to website |
