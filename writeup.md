@@ -57,6 +57,8 @@ Here are some of the basic components for the project
 | Trait Builder | TBD | Creates the customization options |
 | Copywriting | TBD | Create the copy |
 | Repo Manager | Mike | Manage push/pull requests |
+| Customizer | Mike | Create the customizer (not the smart contract) |
+| Art | Mike | Create the artwork for the customization |
 <!-- | X | TBD | X | -->
 
 ## Guidelines for development
