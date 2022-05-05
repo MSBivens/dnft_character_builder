@@ -53,7 +53,7 @@ Here are some of the basic components for the project
 | Scanning Wallet | TBD | Scan wallet to find and pull dNFT information |
 | Wallet Access | Mike | Account access to website |
 | Minting & Updating dNFT | Eric | Smart contract for minting & updating dNFT |
-| Deployer | TBD | Manages deploying dApp to Filecoin or IPFS |
+| Deployer | Frank | Manages deploying dApp to Filecoin or IPFS |
 | Trait Builder | TBD | Creates the customization options |
 | Copywriting | TBD | Create the copy |
 | Repo Manager | Mike | Manage push/pull requests |
