@@ -51,8 +51,8 @@ Here are some of the basic components for the project
 | User Interface | Jared | Advanced front-end work |
 | User Experience | TBD | Drives overall experience of the dApp |
 | Scanning Wallet | TBD | Scan wallet to find and pull dNFT information |
-| Wallet Access | Mike | Account access to website |
-| Minting & Updating dNFT | Frank | Smart contract for minting & updating dNFT |
+| Wallet Access | TBD | Account access to website |
+| Minting & Updating dNFT | TBD | Smart contract for minting & updating dNFT |
 | Deployer | TBD | Manages deploying dApp to Filecoin or IPFS |
 | Trait Builder | TBD | Creates the customization options |
 | Copywriting | TBD | Create the copy |
