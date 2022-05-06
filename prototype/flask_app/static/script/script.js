@@ -7,3 +7,12 @@ async function authenticate() {
     }
     renderApp();
 }
+
+sync function enableWeb3() {
+    try {
+        web3 = await Moralis.enableWeb3({ provider });
+    } catch (error) {
+        console.log('testCall failed', error);
+    }
+    renderApp();
+}
