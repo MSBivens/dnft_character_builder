@@ -1,0 +1,108 @@
+body {
+    background: rgb(244,222,231);
+    background: linear-gradient(132deg, rgba(244,222,231,1) 0%, rgba(255,243,244,1) 50%, rgba(255,255,255,1) 100%);
+}
+/* .container {
+    background: rgb(242,237,239);
+    background: linear-gradient(90deg, rgba(242,237,239,1) 0%, rgba(251,238,249,1) 50%, rgba(255,255,255,1) 100%);
+} */
+
+header {
+    background-color: rgba(255, 255, 255, 0.445);
+    -webkit-box-shadow: 0px 1px 4px 1px rgba(153,153,153,1);
+    -moz-box-shadow: 0px 1px 4px 1px rgba(153,153,153,1);
+    box-shadow: 0px 1px 4px 1px rgba(153,153,153,1);
+}
+.connect{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    margin: 20px;
+    width: 400px;
+}
+.connect p{
+
+    color: black;
+    margin: 10px 40px 10px 10px;
+    padding-left: 30px;
+}
+
+.connect img {
+    margin: 10px 10px 10px 10px;
+}
+.connect:hover{
+    background-color: slategray;
+    cursor: pointer;
+}
+
+.wallet-buttons {
+    padding-left: 0px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.leftmain {
+    width: 550px;
+    /* margin-right: 300px; */
+    /* background-color: aqua; */
+}
+
+.leftmain a {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.leftmain h1 {
+    font-size: 60px;
+}
+
+.rightmain {
+    /* height: 600px; */
+    width: 550px;
+    padding-left: 60px;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+}
+
+.rightmain h3{
+    font-size: 30px;
+    padding: 20px 20px 0px 70px;
+}
+
+#rightheader a {
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: grey;
+}
+
+#rightheader a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#leftheader{
+    display: flex;
+}
+
+#leftheader img{
+    margin-left: 20px;
+}
+#leftheader p{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+
