@@ -54,7 +54,7 @@ Here are some of the basic components for the project
 | Wallet Access | Mike | Account access to website |
 | Minting & Updating dNFT | Eric | Smart contract for minting & updating dNFT |
 | Deployer | Frank | Manages deploying dApp to Filecoin or IPFS |
-| Trait Builder | TBD | Creates the customization options |
+| Trait Builder | Eric | Creates the customization options |
 | Copywriting | TBD | Create the copy |
 | Repo Manager | Mike | Manage push/pull requests |
 | Customizer | Mike | Create the customizer (not the smart contract) |
