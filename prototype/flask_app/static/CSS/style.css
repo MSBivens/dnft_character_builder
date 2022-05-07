@@ -1,6 +1,8 @@
 body {
-    background: rgb(244,222,231);
-    background: linear-gradient(132deg, rgba(244,222,231,1) 0%, rgba(255,243,244,1) 50%, rgba(255,255,255,1) 100%);
+    /* background: rgb(244,222,231);
+    background: linear-gradient(132deg, rgba(244,222,231,1) 0%, rgba(255,243,244,1) 50%, rgba(255,255,255,1) 100%); */
+    background-image: url('/static/images/triangles.png');
+    background-attachment: fixed;
 }
 /* .container {
     background: rgb(242,237,239);
