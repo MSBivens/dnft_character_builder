@@ -92,9 +92,8 @@ This builder is meant to serve as working demo and template for character buildi
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
+* [Flask](https://flask.palletsprojects.com/en/2.1.x/)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,8 +102,7 @@ This builder is meant to serve as working demo and template for character buildi
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To set up the project locally follow these simple example steps.
 
 ### Prerequisites
 
@@ -116,18 +114,13 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/MSBivens/dnft_character_builder.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -137,9 +130,11 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This project is intended to show a working example of how game developers could use dNFTs for character creation and development. Dynamic NFTs allow for the metadata to be updated via smart contract triggers. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+A game developer could clone this repo and use it in their game to allow players to update their characters with elements like items that chagne the metadata of their NFT, trigger class changes, or gain access to new areas.
+
+_For more information on dNFTs, please refer to [Chainlinks Article](https://blog.chain.link/what-is-a-dynamic-nft/)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,10 +143,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Complete a working demo with Genesis collection
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Complete a working demo with genesis collection
+- [ ] Implement additional customization options
+    - [ ] Additional options for current custoimization categories
+    - [ ] New characters for base dNFT
+    - [ ] New customization options
 
 See the [open issues](https://github.com/MSBivens/dnft_character_builder/issues) for a full list of proposed features (and known issues).
 
@@ -162,9 +158,9 @@ See the [open issues](https://github.com/MSBivens/dnft_character_builder/issues)
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Any contributions you make are **greatly appreciated** and ultimately serve to help the community and developers push for new innovations.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "expansion".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -188,9 +184,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
+<!-- Add names to LICENSE.txt -->
 Original Contributers:
-Mike Bivens - [Twitter](https://twitter.com/MSBivens_) - [LinkedIn](https://www.linkedin.com/in/msbivens/)
+
+Mike Bivens - [Twitter](https://twitter.com/MSBivens_) - [LinkedIn](https://www.linkedin.com/in/msbivens/) - [GitHub](https://github.com/MSBivens)
+
+Eric Brusky - [LinkedIn](https://www.linkedin.com/in/eric-brusky/)
+
 
 Project Link: [https://github.com/MSBivens/dnft_character_builder](https://github.com/MSBivens/dnft_character_builder)
 
@@ -201,9 +201,7 @@ Project Link: [https://github.com/MSBivens/dnft_character_builder](https://githu
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Shields IO](https://shields.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
