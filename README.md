@@ -148,6 +148,8 @@ _For more information on dNFTs, please refer to [Chainlinks Article](https://blo
     - [ ] Additional options for current custoimization categories
     - [ ] New characters for base dNFT
     - [ ] New customization options
+- [ ] Create an inventory system
+    - [ ] Implement item options 
 
 See the [open issues](https://github.com/MSBivens/dnft_character_builder/issues) for a full list of proposed features (and known issues).
 
