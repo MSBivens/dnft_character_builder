@@ -26,6 +26,7 @@ NOTE: Filecoin can store everything for us including the website.
 
 
 ## Helpful Links 
+[Ultimate Guide: How to Build Ethereum dApps](https://moralis.io/ultimate-guide-how-to-build-ethereum-dapps/)
 [Chainlink Spring Hackathon page](https://chain.link/hackathon)
 [Chainlink Spring hackathon devpost](https://chainlinkspring2022.devpost.com/) 
 [Chainlink Docs](https://docs.chain.link/docs/hackathon-rules-waiver-release-and-code-of-conduct/?utm_campaign=Spring%20%2722%20Hackathon&utm_medium=email&_hsmi=210744206&_hsenc=p2ANqtz-_rTTH_WT6W0TQAX2sIH1rtD9mo4VR9p_uZiTHTRO6xsaqls2PtZY_4zh6F0vy981EZQPuHaPkoJtsZMTl84nABCv7Ohw&utm_content=210744206&utm_source=hs_email) 
