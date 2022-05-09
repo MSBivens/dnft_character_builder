@@ -18,10 +18,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]](https://github.com/MSBivens/dnft_character_builder/graphs/contributors)
-[![Forks][forks-shield]][https://github.com/MSBivens/dnft_character_builder/network/members]
-[![Stargazers][stars-shield]][https://github.com/MSBivens/dnft_character_builder/stargazers]
-[![Issues][issues-shield]][https://github.com/MSBivens/dnft_character_builder/issues]
-[![MIT License][license-shield]][https://github.com/MSBivens/dnft_character_builder/blob/master/LICENSE.txt]
+[![Forks][forks-shield]](https://github.com/MSBivens/dnft_character_builder/network/members)
+[![Stargazers][stars-shield]](https://github.com/MSBivens/dnft_character_builder/stargazers)
+[![Issues][issues-shield]](https://github.com/MSBivens/dnft_character_builder/issues)
+[![MIT License][license-shield]](https://github.com/MSBivens/dnft_character_builder/blob/master/LICENSE.txt)
 
 
 
