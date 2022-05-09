@@ -162,7 +162,7 @@ See the [open issues](https://github.com/MSBivens/dnft_character_builder/issues)
 
 Any contributions you make are **greatly appreciated** and ultimately serve to help the community and developers push for new innovations.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "expansion".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
