@@ -4,8 +4,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]](license-url)
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
@@ -189,7 +187,6 @@ Project Link: [https://github.com/MSBivens/dnft_character_builder](https://githu
 * [Shields IO](https://shields.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
