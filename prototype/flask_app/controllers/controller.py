@@ -12,8 +12,8 @@ def redirectGEThome():
 def GEThome():
     return render_template('home.html')
 
-@app.route('/dashboard')
-def GETdashboard():
+@app.route('/dashboard/<int:id>')
+def GETdashboard(id):
     # if 'userid' not in session:
     #     return redirect('/home')
     return render_template('dashboard.html')
