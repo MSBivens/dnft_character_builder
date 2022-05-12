@@ -1,3 +1,7 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+} 
+
 .oldest {
     border-radius: inherit;
     cursor: pointer;
@@ -66,21 +70,6 @@ article header {
     font-size: 20px;
 }
 
-/* main {
-    -moz-box-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 1280px;
-    max-width: 100%;
-    padding: 8px 8px 16px;
-}
-*/
-*, ::before, ::after {
-    box-sizing: border-box;
-} 
 
 .details {
     border-radius: 10px;
@@ -143,13 +132,10 @@ article header {
 
 .more {
     border-radius: 10px;
-    border-color: currentcolor rgb(229, 232, 235) rgb(229, 232, 235);
-    border-style: none solid solid;
-    border-width: medium 1px 1px;
-    border-image: none 100% / 1 / 0 stretch;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+    background-color: white;
     overflow: auto;
-    color: rgb(4, 17, 29);
+    margin: 20px;
 }
 
 .scroll {
@@ -157,10 +143,20 @@ article header {
     display: inline-flex;
 }
 
-.scroll article {
-
-}
 .scroll article a img{
-    width: 321px;
-    height: 321px;
+    width: 270px;
+    height: 270px;
+}
+
+.card-info {
+    height: 100px;
+    width: 100%;
+}
+.card-title {
+    padding: 10px;
+    color: rgb(53, 56, 64);
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    text-align: left;
 }
