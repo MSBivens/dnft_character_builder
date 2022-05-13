@@ -35,7 +35,7 @@
                     <img src="{{ url_for('static',filename='images/placeholder.png') }}" width="auto" height="60%">
                 </div>
                 <div class="template-selector-parent">
-                    <form>
+                    <form action="/dashboard/0" method="get">
                         <div class="template-selector">
                             <h3>Name field</h3>
                             <div class="background">
@@ -79,7 +79,7 @@
                             </div>
                             <section>
                                 <button class="btn btn-secondary">Randomize</button>
-                                <button class="btn btn-dark">Confirm</button>
+                                <button type="submit" class="btn btn-dark">Confirm</button>
                             </section>
                             
                         </div>
