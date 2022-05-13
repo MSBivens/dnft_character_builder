@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='CSS/style.css') }}" >
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='CSS/customize.css') }}" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <title>Customize</title>
 </head>
 <body>
@@ -26,10 +28,67 @@
             
         </nav>
     </header>
-    <div class="container">
-        
-    </div>
-    <main></main>
+    <main>
+        <div class="container">
+            <div class="template">
+                <div class="template-view">
+                    <img src="{{ url_for('static',filename='images/placeholder.png') }}" width="auto" height="60%">
+                </div>
+                <div class="template-selector-parent">
+                    <form>
+                        <div class="template-selector">
+                            <h3>Name field</h3>
+                            <div class="background">
+                                <button><i class="material-icons">arrow_back</i></button>
+                                
+                                <p>Background</p>
+                                <button><i class="material-icons">arrow_forward</i></button>
+                                
+                            </div>
+                            <div class="hat">
+                                <button><i class="material-icons">arrow_back</i></button>
+                                
+                                <p>Hat</p>
+                                <button><i class="material-icons">arrow_forward</i></button>
+                                
+                            </div>
+                            <div class="clothes">
+                                <button><i class="material-icons">arrow_back</i></button>
+                                
+                                <p>clothes</p>
+                                <button><i class="material-icons">arrow_forward</i></button>
+                                
+                            </div>
+                            <div class="item">
+                                <button><i class="material-icons">arrow_back</i></button>
+                                
+                                <p>Item</p>
+                                <button><i class="material-icons">arrow_forward</i></button>
+                                
+                            </div>
+                            <div class="pet">
+                                <button><i class="material-icons">arrow_back</i></button>
+                                
+                                <p>Pet</p>
+                                <button><i class="material-icons">arrow_forward</i></button>
+                                
+                            </div>
+                            <div class="form-group">
+                                <p>Description</p>
+                                <textarea class="form-control" id="description" rows="2"></textarea>
+                            </div>
+                            <section>
+                                <button class="btn btn-secondary">Randomize</button>
+                                <button class="btn btn-dark">Confirm</button>
+                            </section>
+                            
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
     <footer class="text-center text-lg-start bg-light text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4">
 

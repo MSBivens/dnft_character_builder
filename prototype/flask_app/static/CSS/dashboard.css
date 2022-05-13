@@ -2,6 +2,10 @@
     box-sizing: border-box;
 } 
 
+#opensee {
+    margin: 20px;
+    width: 300px;
+}
 .oldest {
     border-radius: inherit;
     cursor: pointer;
@@ -49,8 +53,45 @@ article header {
     margin: 20px 20px 15px;
 }
 
-.item-header h1 {
-    font-size: 30px;
+.item-title {
+    display: flex;
+}
+
+.title-right {
+    max-width: fit-content;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.title-right a {
+    display: inline-flex;
+    flex-direction: row;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+    color: rgb(112, 122, 131);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: medium none;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+}
+
+
+.item-title h1 {
+    font-size: 40px;
     font-weight: 600;
     max-width: 100%;
     margin: 0px;
@@ -63,12 +104,20 @@ article header {
     -webkit-line-clamp: 3;
     width: 710px;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 8px;
 }
 
 .item-header p {
     font-size: 20px;
 }
+
+.item-header a {
+    text-decoration: none;
+    color: rgb(112, 122, 131);
+    font-size: 16px;
+    padding-bottom: 100px;
+}
+
 
 
 .details {
