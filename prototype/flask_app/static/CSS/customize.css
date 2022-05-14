@@ -1,0 +1,67 @@
+.template {
+    margin: 30px;
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    display: flex;
+    background-image: url('/static/images/placeholderbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.template-view {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.template-selector-parent {
+    width: 40%;
+    height: 100%;
+}
+
+.template-selector {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    background-color: white;
+}
+
+.template-selector div {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+}
+
+
+.template-selector div button {
+    border: none;
+    background-color: transparent;
+}
+
+.form-group {
+    flex-direction: column;
+}
+
+.template-selector section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.template-selector section button {
+    width: 45%;
+    margin: auto;
+}
+
+.template-selector h3 {
+    display: flex;
+    justify-content: center;
+}
