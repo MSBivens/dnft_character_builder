@@ -32,53 +32,143 @@
         <div class="container">
             <div class="template">
                 <div class="template-view">
-                    <img src="{{ url_for('static',filename='images/placeholder.png') }}" width="auto" height="60%">
+                    <img src="{{ url_for('static',filename='images/my_avatar.svg') }}" width="auto" height="60%">
                 </div>
                 <div class="template-selector-parent">
-                    <form action="/dashboard/0" method="get">
+                    <form action="/customize/update" method="post" >
                         <div class="template-selector">
-                            <h3>Name field</h3>
-                            <div class="background">
-                                <button><i class="material-icons">arrow_back</i></button>
-                                
-                                <p>Background</p>
-                                <button><i class="material-icons">arrow_forward</i></button>
-                                
+                            <h3>Name field{{avatar.style}}</h3>
+                            <div>
+                                <label for="style" class="form-label">Style</label>
+                                <select class="form-select" id="style" name="style" onchange="this.form.submit()">
+                                    {% for AvatarStyle in styles %}
+                                        {% if AvatarStyle == avatar.style %}
+                                        <option value="{{AvatarStyle}}" selected>{{AvatarStyle.name}}</option>
+                                        {% else %}
+                                        <option value="{{AvatarStyle}}">{{AvatarStyle.name}}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
                             </div>
-                            <div class="hat">
-                                <button><i class="material-icons">arrow_back</i></button>
-                                
-                                <p>Hat</p>
-                                <button><i class="material-icons">arrow_forward</i></button>
-                                
+                            <div>
+                                <label for="background_color" class="form-label">Background color</label>
+                                <select class="form-select" id="background_color" name="background_color" onchange="this.form.submit()">
+                                    {% for BackgroundColor in backgroundcolors %}
+                                    <option value="{{BackgroundColor}}" >{{BackgroundColor.name}}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
-                            <div class="clothes">
-                                <button><i class="material-icons">arrow_back</i></button>
-                                
-                                <p>clothes</p>
-                                <button><i class="material-icons">arrow_forward</i></button>
-                                
+                            <div>
+                                <label for="skin_color" class="form-label">Skin color</label>
+                                <select class="form-select" id="skin_color" name="skin_color">
+                                    {% for SkinColor in skincolors %}
+                                    <option value="{{SkinColor}}">{{SkinColor.name}}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
-                            <div class="item">
-                                <button><i class="material-icons">arrow_back</i></button>
-                                
-                                <p>Item</p>
-                                <button><i class="material-icons">arrow_forward</i></button>
-                                
+                            <h5>Head top</h5>
+                            <div>
+                                <label for="head_top" class="form-label">Head top</label>
+                                <select class="form-select" id="head_top" name="head_top">
+                                    {% for TopType in toptypes %}
+                                    <option value="{{TopType}}">{{TopType.name}}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
-                            <div class="pet">
-                                <button><i class="material-icons">arrow_back</i></button>
-                                
-                                <p>Pet</p>
-                                <button><i class="material-icons">arrow_forward</i></button>
-                                
+                            <div>
+                                <label for="hair_color" class="form-label">Hair color</label>
+                                <select class="form-select" id="hair_color" name="hair_color">
+                                    {% for HairColor in haircolors %}
+                                    <option value="{{HairColor}}">{{HairColor.name}}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
-                            <div class="form-group">
+                            <div>
+                                <label for="hat_color" class="form-label">Hat color</label>
+                                <select class="form-select" id="hat_color" name="hat_color">
+                                    
+                                </select>
+                            </div>
+                            <h5>Face</h5>
+                            <div>
+                                <label for="facial_hair_type" class="form-label">Facial hair type</label>
+                                <select class="form-select" id="facial_hair_type" name="facial_hair_type">
+                                    {% for FacialHairType in facial_hair_types %}
+                                    <option value="{{FacialHairType}}">{{FacialHairType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="facial_hair_color" class="form-label">Facial hair color</label>
+                                <select class="form-select" id="facial_hair_color" name="facial_hair_color">
+                                    {% for HairColor in haircolors %}
+                                    <option value="{{HairColor}}">{{HairColor.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="mouth_type" class="form-label">Mouth type</label>
+                                <select class="form-select" id="mouth_type" name="mouth_type">
+                                    {% for MouthType in mouthtypes %}
+                                    <option value="{{MouthType}}">{{MouthType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="eye_type" class="form-label">Eye type</label>
+                                <select class="form-select" id="eye_type" name="eye_type">
+                                    {% for EyeType in eyetypes %}
+                                    <option value="{{EyeType}}">{{EyeType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="eyebrow_type" class="form-label">Eyebrow type</label>
+                                <select class="form-select" id="eyebrow_type" name="eyebrow_type">
+                                    {% for EyebrowType in eyebrowtypes %}
+                                    <option value="{{EyebrowType}}">{{EyebrowType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <h5>Clothes and accessories</h5>
+                            <div>
+                                <label for="accessories_type" class="form-label">Accessories type</label>
+                                <select class="form-select" id="accessories_type" name="accessories_type">
+                                    {% for AccessoryType in accessorytypes %}
+                                    <option value="{{AccessoryType}}">{{AccessoryType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="clothes_type" class="form-label">Clothes type</label>
+                                <select class="form-select" id="clothes_type" name="clothes_type">
+                                    {% for ClothingType in clothingtypes %}
+                                    <option value="{{ClothingType}}">{{ClothingType.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="clothes_color" class="form-label">Clothes color</label>
+                                <select class="form-select" id="clothes_color" name="clothes_color">
+                                    {% for ClothingColor in clothingcolors %}
+                                    <option value="{{ClothingColor}}">{{ClothingColor.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="clothes_graphic_type" class="form-label">Clothes graphic type</label>
+                                <select class="form-select" id="clothes_graphic_type" name="clothes_graphic_type">
+                                    {% for ClothingGraphic in clothinggraphics %}
+                                    <option value="{{ClothingGraphic}}">{{ClothingGraphic.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <!-- <div class="form-group">
                                 <p>Description</p>
                                 <textarea class="form-control" id="description" rows="2"></textarea>
-                            </div>
+                            </div> -->
                             <section>
-                                <button class="btn btn-secondary">Randomize</button>
+                                <a href="/customize/random"><button type="button" class="btn btn-secondary">Randomize</button></a>
                                 <button type="submit" class="btn btn-dark">Confirm</button>
                             </section>
                             
@@ -94,5 +184,8 @@
 
         </section>
     </footer>
+    <script>
+
+    </script>
 </body>
 </html>
