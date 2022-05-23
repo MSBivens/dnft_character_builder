@@ -60,7 +60,7 @@
                             </div>
                             <div>
                                 <label for="skin_color" class="form-label">Skin color</label>
-                                <select class="form-select" id="skin_color" name="skin_color">
+                                <select class="form-select" id="skin_color" name="skin_color" onchange="this.form.submit()">
                                     {% for SkinColor in skincolors %}
                                     <option value="{{SkinColor}}">{{SkinColor.name}}</option>
                                     {% endfor %}
@@ -69,7 +69,7 @@
                             <h5>Head top</h5>
                             <div>
                                 <label for="head_top" class="form-label">Head top</label>
-                                <select class="form-select" id="head_top" name="head_top">
+                                <select class="form-select" id="head_top" name="head_top" onchange="this.form.submit()">
                                     {% for TopType in toptypes %}
                                     <option value="{{TopType}}">{{TopType.name}}</option>
                                     {% endfor %}
@@ -77,7 +77,7 @@
                             </div>
                             <div>
                                 <label for="hair_color" class="form-label">Hair color</label>
-                                <select class="form-select" id="hair_color" name="hair_color">
+                                <select class="form-select" id="hair_color" name="hair_color" onchange="this.form.submit()">
                                     {% for HairColor in haircolors %}
                                     <option value="{{HairColor}}">{{HairColor.name}}</option>
                                     {% endfor %}
@@ -92,7 +92,7 @@
                             <h5>Face</h5>
                             <div>
                                 <label for="facial_hair_type" class="form-label">Facial hair type</label>
-                                <select class="form-select" id="facial_hair_type" name="facial_hair_type">
+                                <select class="form-select" id="facial_hair_type" name="facial_hair_type" onchange="this.form.submit()">
                                     {% for FacialHairType in facial_hair_types %}
                                     <option value="{{FacialHairType}}">{{FacialHairType.name}}</option>
                                     {% endfor %}
@@ -100,7 +100,7 @@
                             </div>
                             <div>
                                 <label for="facial_hair_color" class="form-label">Facial hair color</label>
-                                <select class="form-select" id="facial_hair_color" name="facial_hair_color">
+                                <select class="form-select" id="facial_hair_color" name="facial_hair_color" onchange="this.form.submit()">
                                     {% for HairColor in haircolors %}
                                     <option value="{{HairColor}}">{{HairColor.name}}</option>
                                     {% endfor %}
@@ -108,7 +108,7 @@
                             </div>
                             <div>
                                 <label for="mouth_type" class="form-label">Mouth type</label>
-                                <select class="form-select" id="mouth_type" name="mouth_type">
+                                <select class="form-select" id="mouth_type" name="mouth_type" onchange="this.form.submit()">
                                     {% for MouthType in mouthtypes %}
                                     <option value="{{MouthType}}">{{MouthType.name}}</option>
                                     {% endfor %}
@@ -116,7 +116,7 @@
                             </div>
                             <div>
                                 <label for="eye_type" class="form-label">Eye type</label>
-                                <select class="form-select" id="eye_type" name="eye_type">
+                                <select class="form-select" id="eye_type" name="eye_type" onchange="this.form.submit()">
                                     {% for EyeType in eyetypes %}
                                     <option value="{{EyeType}}">{{EyeType.name}}</option>
                                     {% endfor %}
@@ -124,7 +124,7 @@
                             </div>
                             <div>
                                 <label for="eyebrow_type" class="form-label">Eyebrow type</label>
-                                <select class="form-select" id="eyebrow_type" name="eyebrow_type">
+                                <select class="form-select" id="eyebrow_type" name="eyebrow_type" onchange="this.form.submit()">
                                     {% for EyebrowType in eyebrowtypes %}
                                     <option value="{{EyebrowType}}">{{EyebrowType.name}}</option>
                                     {% endfor %}
@@ -133,7 +133,7 @@
                             <h5>Clothes and accessories</h5>
                             <div>
                                 <label for="accessories_type" class="form-label">Accessories type</label>
-                                <select class="form-select" id="accessories_type" name="accessories_type">
+                                <select class="form-select" id="accessories_type" name="accessories_type" onchange="this.form.submit()">
                                     {% for AccessoryType in accessorytypes %}
                                     <option value="{{AccessoryType}}">{{AccessoryType.name}}</option>
                                     {% endfor %}
@@ -141,7 +141,7 @@
                             </div>
                             <div>
                                 <label for="clothes_type" class="form-label">Clothes type</label>
-                                <select class="form-select" id="clothes_type" name="clothes_type">
+                                <select class="form-select" id="clothes_type" name="clothes_type" onchange="this.form.submit()">
                                     {% for ClothingType in clothingtypes %}
                                     <option value="{{ClothingType}}">{{ClothingType.name}}</option>
                                     {% endfor %}
@@ -149,7 +149,7 @@
                             </div>
                             <div>
                                 <label for="clothes_color" class="form-label">Clothes color</label>
-                                <select class="form-select" id="clothes_color" name="clothes_color">
+                                <select class="form-select" id="clothes_color" name="clothes_color" onchange="this.form.submit()">
                                     {% for ClothingColor in clothingcolors %}
                                     <option value="{{ClothingColor}}">{{ClothingColor.name}}</option>
                                     {% endfor %}
@@ -157,7 +157,7 @@
                             </div>
                             <div>
                                 <label for="clothes_graphic_type" class="form-label">Clothes graphic type</label>
-                                <select class="form-select" id="clothes_graphic_type" name="clothes_graphic_type">
+                                <select class="form-select" id="clothes_graphic_type" name="clothes_graphic_type" onchange="this.form.submit()">
                                     {% for ClothingGraphic in clothinggraphics %}
                                     <option value="{{ClothingGraphic}}">{{ClothingGraphic.name}}</option>
                                     {% endfor %}
