@@ -18,7 +18,6 @@ from python_avatars.background_colors import BackgroundColor
 
 my_avatar = Avatar()
 
-
 @app.route('/')
 def redirectGEThome():
     # if 'userid' in session:
@@ -52,6 +51,7 @@ def GETcustomize():
     haircolor = my_avatar.hair_color
     toptypes = TopType.get_all()
     return render_template('customize.html', 
+    avatar = my_avatar,
     haircolors = HairColor, 
     haircolor = haircolor,
     styles = AvatarStyle,
