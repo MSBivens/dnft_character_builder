@@ -22,6 +22,7 @@
 .template-selector-parent {
     width: 40%;
     height: 100%;
+    overflow: auto;
 }
 
 .template-selector {
@@ -36,6 +37,7 @@
     padding: 10px;
     margin: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -56,9 +58,9 @@
     display: flex;
     justify-content: space-evenly;
 }
-.template-selector section button {
-    width: 45%;
-    margin: auto;
+.template-selector section:last-child {
+    /* width: 45%;
+    margin: auto; */
 }
 
 .template-selector h3 {
