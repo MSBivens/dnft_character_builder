@@ -17,7 +17,7 @@ from python_avatars.clothing_graphics import ClothingGraphic
 from python_avatars.background_colors import BackgroundColor
 
 my_avatar = Avatar()
-
+    
 @app.route('/')
 def redirectGEThome():
     # if 'userid' in session:
@@ -48,15 +48,12 @@ def GETmint():
 def GETcustomize():
     # if 'userid' not in session:
     #     return redirect('/home')
-    haircolor = my_avatar.hair_color
-    toptypes = TopType.get_all()
     return render_template('customize.html', 
     avatar = my_avatar,
     haircolors = HairColor, 
-    haircolor = haircolor,
     styles = AvatarStyle,
     skincolors = SkinColor,
-    toptypes = toptypes,
+    toptypes = TopType,
     facial_hair_types = FacialHairType,
     mouthtypes = MouthType,
     eyetypes = EyeType,
@@ -70,7 +67,24 @@ def GETcustomize():
 
 @app.route('/customize/random')
 def GETcustomizerandom():
-    my_avatar = Avatar.random()
+    my_avatar.style=str(AvatarStyle.pick_random()) 
+    my_avatar.background_color=str(BackgroundColor.pick_random())
+    my_avatar.top=TopType.pick_random() 
+    my_avatar.hat_color=str(ClothingColor.pick_random()) 
+    my_avatar.eyebrows=str(EyebrowType.pick_random()) 
+    my_avatar.eyes=str(EyeType.pick_random()) 
+    my_avatar.mouth=str(MouthType.pick_random())
+    my_avatar.facial_hair=str(FacialHairType.pick_random(favor=FacialHairType.NONE)) 
+    my_avatar.skin_color=str(SkinColor.pick_random()) 
+    my_avatar.hair_color=str(HairColor.pick_random()) 
+    my_avatar.facial_hair_color=str(HairColor.pick_random())
+    my_avatar.accessory=str(AccessoryType.pick_random(favor=AccessoryType.NONE)) 
+    my_avatar.clothing=str(ClothingType.pick_random()) 
+    my_avatar.clothing_color=str(ClothingColor.pick_random()) 
+    my_avatar.shirt_graphic=str(ClothingGraphic.pick_random())
+    # my_avatar.shirt_text=my_avatar.shirt_text,
+    # my_avatar.title=my_avatar.title,
+
     my_avatar.render("flask_app/static/images/my_avatar.svg")
     return redirect('/customize')
 
@@ -80,6 +94,7 @@ def POSTcustomize():
     my_avatar.style = request.form.get("style")
     my_avatar.background_color = request.form.get("background_color")
     my_avatar.skin_color = request.form.get("skin_color")
+    my_avatar.hat_color = request.form.get("hat_color")
     # my_avatar.top = request.form.get("head_top")
     my_avatar.facial_hair = request.form.get("facial_hair_type")
     my_avatar.facial_hair_color = request.form.get("facial_hair_color")
