@@ -37,7 +37,7 @@
                 <div class="template-selector-parent">
                     <form action="/customize/update" method="post" >
                         <div class="template-selector">
-                            <h3>Name field{{avatar.shirt_graphic}}</h3>
+                            <h3>Name field</h3>
                             <div>
                                 <label for="style" class="form-label">Style</label>
                                 <select class="form-select" id="style" name="style" onchange="this.form.submit()">
@@ -98,7 +98,13 @@
                             <div>
                                 <label for="hat_color" class="form-label">Hat color</label>
                                 <select class="form-select" id="hat_color" name="hat_color">
-                                    
+                                    {% for ClothingColor in clothingcolors %}
+                                        {% if ClothingColor.value == avatar.hat_color %}
+                                        <option value="{{ClothingColor}}" selected>{{ClothingColor.name}}</option>
+                                        {% else %}
+                                        <option value="{{ClothingColor}}">{{ClothingColor.name}}</option>
+                                        {% endif %}
+                                    {% endfor %}
                                 </select>
                             </div>
                             <h5>Face</h5>
