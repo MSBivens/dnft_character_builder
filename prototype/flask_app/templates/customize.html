@@ -76,13 +76,29 @@
                             </div>
                             <h5>Head top</h5>
                             <div>
-                                <label for="head_top" class="form-label">Head top</label>
-                                <select class="form-select" id="head_top" name="head_top" onchange="this.form.submit()">
+                                <label for="top_type" class="form-label">Head top</label>
+                                <select class="form-select" id="top_type" name="top_type" onchange="this.form.submit()">
                                     {% for TopType in toptypes %}
-                                    <option value="{{TopType}}">{{TopType.name}}</option>
+                                        {% if TopType.value == avatar.top %}
+                                        <option value="{{TopType}}" selected>{{TopType.name}}</option>
+                                        {% else %}
+                                        <option value="{{TopType}}">{{TopType.name}}</option>
+                                        {% endif %}
                                     {% endfor %}
                                 </select>
                             </div>
+                            <!-- <div>
+                                <label for="hair_type" class="form-label">Head top</label>
+                                <select class="form-select" id="hair_type" name="hair_type" onchange="this.form.submit()">
+                                    {% for HairType in hairtypes %}
+                                        {% if HairType.value == avatar.top %}
+                                        <option value="{{HairType}}" selected>{{HairType.name}}</option>
+                                        {% else %}
+                                        <option value="{{HairType}}">{{HairType.name}}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </div> -->
                             <div>
                                 <label for="hair_color" class="form-label">Hair color</label>
                                 <select class="form-select" id="hair_color" name="hair_color" onchange="this.form.submit()">
