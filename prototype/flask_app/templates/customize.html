@@ -37,7 +37,7 @@
                 <div class="template-selector-parent">
                     <form action="/customize/update" method="post" >
                         <div class="template-selector">
-                            <h3>Name field</h3>
+                            <h3>{{avatar.title}}</h3>
                             <div>
                                 <label for="style" class="form-label">Style</label>
                                 <select class="form-select" id="style" name="style" onchange="this.form.submit()">
@@ -87,18 +87,6 @@
                                     {% endfor %}
                                 </select>
                             </div>
-                            <!-- <div>
-                                <label for="hair_type" class="form-label">Head top</label>
-                                <select class="form-select" id="hair_type" name="hair_type" onchange="this.form.submit()">
-                                    {% for HairType in hairtypes %}
-                                        {% if HairType.value == avatar.top %}
-                                        <option value="{{HairType}}" selected>{{HairType.name}}</option>
-                                        {% else %}
-                                        <option value="{{HairType}}">{{HairType.name}}</option>
-                                        {% endif %}
-                                    {% endfor %}
-                                </select>
-                            </div> -->
                             <div>
                                 <label for="hair_color" class="form-label">Hair color</label>
                                 <select class="form-select" id="hair_color" name="hair_color" onchange="this.form.submit()">
@@ -113,7 +101,7 @@
                             </div>
                             <div>
                                 <label for="hat_color" class="form-label">Hat color</label>
-                                <select class="form-select" id="hat_color" name="hat_color">
+                                <select class="form-select" id="hat_color" name="hat_color" onchange="this.form.submit()">
                                     {% for ClothingColor in clothingcolors %}
                                         {% if ClothingColor.value == avatar.hat_color %}
                                         <option value="{{ClothingColor}}" selected>{{ClothingColor.name}}</option>
@@ -232,6 +220,13 @@
                                         {% endif %}
                                     {% endfor %}
                                 </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Name Your Avatar</span>
+                                </div>
+                                <input type="text" name="title" id="title" class="form-control" value="{{avatar.title}}" 
+                                aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <!-- <div class="form-group">
                                 <p>Description</p>

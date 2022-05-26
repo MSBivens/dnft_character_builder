@@ -56,8 +56,6 @@ def GETcustomize():
     haircolors = HairColor, 
     styles = AvatarStyle,
     skincolors = SkinColor,
-    hattypes = HatType,
-    hairtypes = HairType,
     toptypes = toptypes,
     facial_hair_types = FacialHairType,
     mouthtypes = MouthType,
@@ -95,6 +93,7 @@ def GETcustomizerandom():
 
 @app.route('/customize/update', methods=['POST'])
 def POSTcustomize():
+    my_avatar.title = request.form.get("title")
     my_avatar.top = request.form.get("top_type")
     my_avatar.hair_color = request.form.get("hair_color")
     my_avatar.style = request.form.get("style")
