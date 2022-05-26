@@ -6,7 +6,7 @@ class HairType(AvatarPart):
 
     __install__ = True
     __enum_path__ = 'hair_types.py'
-    __path__ = 'avatar_parts/top/hair'
+    __path__ = 'avatar_parts/top/hat'
 
     NONE = 'no_hair'
     BIG_HAIR = 'big_hair'

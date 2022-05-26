@@ -6,6 +6,8 @@ from python_avatars.hair_colors import HairColor
 from python_avatars.avatar_styles import AvatarStyle
 from python_avatars.skin_colors import SkinColor
 from python_avatars.top_types import TopType
+from python_avatars.hair_types import HairType
+from python_avatars.hat_types import HatType
 from python_avatars.facial_hair_types import FacialHairType
 from python_avatars.mouth_types import MouthType
 from python_avatars.eye_types import EyeType
@@ -48,12 +50,13 @@ def GETmint():
 def GETcustomize():
     # if 'userid' not in session:
     #     return redirect('/home')
+    toptypes = TopType.get_all()
     return render_template('customize.html', 
     avatar = my_avatar,
     haircolors = HairColor, 
     styles = AvatarStyle,
     skincolors = SkinColor,
-    toptypes = TopType,
+    toptypes = toptypes,
     facial_hair_types = FacialHairType,
     mouthtypes = MouthType,
     eyetypes = EyeType,
@@ -69,7 +72,7 @@ def GETcustomize():
 def GETcustomizerandom():
     my_avatar.style=str(AvatarStyle.pick_random()) 
     my_avatar.background_color=str(BackgroundColor.pick_random())
-    my_avatar.top=TopType.pick_random() 
+    my_avatar.top=str(TopType.pick_random()) 
     my_avatar.hat_color=str(ClothingColor.pick_random()) 
     my_avatar.eyebrows=str(EyebrowType.pick_random()) 
     my_avatar.eyes=str(EyeType.pick_random()) 
@@ -90,12 +93,13 @@ def GETcustomizerandom():
 
 @app.route('/customize/update', methods=['POST'])
 def POSTcustomize():
+    my_avatar.title = request.form.get("title")
+    my_avatar.top = request.form.get("top_type")
     my_avatar.hair_color = request.form.get("hair_color")
     my_avatar.style = request.form.get("style")
     my_avatar.background_color = request.form.get("background_color")
     my_avatar.skin_color = request.form.get("skin_color")
     my_avatar.hat_color = request.form.get("hat_color")
-    # my_avatar.top = request.form.get("head_top")
     my_avatar.facial_hair = request.form.get("facial_hair_type")
     my_avatar.facial_hair_color = request.form.get("facial_hair_color")
     my_avatar.mouth = request.form.get("mouth_type")
