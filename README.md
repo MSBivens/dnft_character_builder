@@ -107,6 +107,21 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
+###  Run Localhost server
+
+1. Change directory
+   ```sh
+   cd dnft_character_builder/prototype
+   ```
+2. open shell
+   ```sh
+   python -m pipenv shell
+   ```
+3. run server.py
+   ```sh
+   python server.py
+   ```
+4. run locahost:5000 in browser
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
