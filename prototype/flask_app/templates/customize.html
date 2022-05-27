@@ -40,8 +40,15 @@
                             <h3>{{avatar.title}}</h3>
                             <div>
                                 <label for="style" class="form-label">Style</label>
+                                <!-- each selector will submit the form when updated -->
                                 <select class="form-select" id="style" name="style" onchange="this.form.submit()">
                                     {% for AvatarStyle in styles %}
+                                        <!-- 
+                                            when the form is submitted the option that the user selected 
+                                            should stay locked in so that they don't lose their progress. 
+                                            
+                                        -->
+                                        
                                         {% if AvatarStyle.value == avatar.style %}
                                         <option value="{{AvatarStyle}}" selected>{{AvatarStyle.name}}</option>
                                         {% else %}
@@ -221,20 +228,15 @@
                                     {% endfor %}
                                 </select>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Name Your Avatar</span>
-                                </div>
+                            <div>
+                                <label for="title">name your avatar</label>
                                 <input type="text" name="title" id="title" class="form-control" value="{{avatar.title}}" 
                                 aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                             </div>
-                            <!-- <div class="form-group">
-                                <p>Description</p>
-                                <textarea class="form-control" id="description" rows="2"></textarea>
-                            </div> -->
                             <section>
                                 <a href="/customize/random"><button type="button" class="btn btn-secondary">Randomize</button></a>
-                                <button type="submit" class="btn btn-dark">Confirm</button>
+                                <!-- instead of submiting the form to the /customize/update route, the confirm button should submit the svg file to be minted -->
+                                <button class="btn btn-dark">Confirm</button>
                             </section>
                             
                         </div>

@@ -18,12 +18,11 @@ from python_avatars.clothing_colors import ClothingColor
 from python_avatars.clothing_graphics import ClothingGraphic
 from python_avatars.background_colors import BackgroundColor
 
+# new instance
 my_avatar = Avatar()
     
 @app.route('/')
 def redirectGEThome():
-    # if 'userid' in session:
-    #     return redirect('/dashboard')
     return redirect('/home')
 
 @app.route('/home')
@@ -32,8 +31,6 @@ def GEThome():
 
 @app.route('/dashboard/<int:id>')
 def GETdashboard(id):
-    # if 'userid' not in session:
-    #     return redirect('/home')
     return render_template('dashboard.html')
 
 @app.route('/about')
@@ -42,14 +39,12 @@ def GETabout():
 
 @app.route('/mint')
 def GETmint():
-    # if 'userid' not in session:
-    #     return redirect('/home')
     return render_template('mint.html')
 
+
+# this route renders the page
 @app.route('/customize')
 def GETcustomize():
-    # if 'userid' not in session:
-    #     return redirect('/home')
     toptypes = TopType.get_all()
     return render_template('customize.html', 
     avatar = my_avatar,
@@ -68,6 +63,8 @@ def GETcustomize():
     backgroundcolors = BackgroundColor
     )
 
+
+# this route gives each attribute a random value
 @app.route('/customize/random')
 def GETcustomizerandom():
     my_avatar.style=str(AvatarStyle.pick_random()) 
@@ -85,12 +82,13 @@ def GETcustomizerandom():
     my_avatar.clothing=str(ClothingType.pick_random()) 
     my_avatar.clothing_color=str(ClothingColor.pick_random()) 
     my_avatar.shirt_graphic=str(ClothingGraphic.pick_random())
-    # my_avatar.shirt_text=my_avatar.shirt_text,
-    # my_avatar.title=my_avatar.title,
 
+    # this updates the existing my_avatar.svg 
     my_avatar.render("flask_app/static/images/my_avatar.svg")
     return redirect('/customize')
 
+
+# this route updates the attributes of the main instance with the corresponding selected values from the form
 @app.route('/customize/update', methods=['POST'])
 def POSTcustomize():
     my_avatar.title = request.form.get("title")
@@ -109,5 +107,7 @@ def POSTcustomize():
     my_avatar.clothing = request.form.get("clothes_type")
     my_avatar.clothing_color = request.form.get("clothes_color")
     my_avatar.shirt_graphic = request.form.get("clothes_graphic_type")
+
+    # this updates the existing my_avatar.svg 
     my_avatar.render("flask_app/static/images/my_avatar.svg")
     return redirect('/customize')
